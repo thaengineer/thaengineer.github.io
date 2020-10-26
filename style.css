@@ -24,6 +24,11 @@ h1 {
 	font-weight: 500;
 }
 
+.h1-bold {
+	font-size: 28px;
+	font-weight: bold;
+}
+
 h2 {
 	color: #393939;
 	font-weight: 500;
