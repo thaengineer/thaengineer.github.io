@@ -38,6 +38,7 @@ body {
 	background-attachment: fixed;
 	padding-top: 1.5rem;
 	line-height: 1rem;
+	max-width: 40rem;
 }
 
 .profile-picture-container {
@@ -73,7 +74,7 @@ a {
 	color: var(--text);
 	font-weight: bold;
 	line-height: 3;
-	min-width: 360px;
+	min-width: 18rem;
 	margin-top: 1.5rem;
 }
 
