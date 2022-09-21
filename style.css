@@ -1,18 +1,11 @@
 :root {
     --font: Arial, Helvetica, sans-serif;
-
 	--bg: rgb(38, 0, 6);
 	--text: #f5f5f5;
 	--transparent: rgba(0, 0, 0, 0.0);
-	
     --border: #f5f5f5;
-    --accent: #0d47a1;
-    --code: #d81b60;
-    --preformatted: #444444;
-    --marked: #ffdd33;
-    --disabled: #efefef;
-    /* Brightness filter is applied on header links in hover state */
-    --hover-brightness: brightness(0.6);
+	--gradient-color-one: rgba(25, 118, 210, 1);
+	--gradient-color-two: rgba(30, 39, 73, 0.9);
 }
 
 html {
@@ -31,8 +24,8 @@ body {
 	background: var(--bg);
 	background: linear-gradient(
 		0deg,
-		rgba(38, 0, 6, 1) 0%,
-		rgba(30, 39, 73, 0.9) 100%
+		var(--gradient-color-one) 0%,
+		var(--gradient-color-two) 100%
 	);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
