@@ -73,9 +73,10 @@ a {
 	color: var(--text);
 	font-weight: bold;
 	line-height: 3;
-	margin-top: 24px;
-	padding-left: 240px;
-	padding-right: 240px;
+	width: 280px;
+	margin-top: 1.5rem;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 a:hover {
