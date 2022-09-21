@@ -36,7 +36,7 @@ body {
 	);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	padding-top:1.5rem;
+	padding-top: 1.5rem;
 	line-height: 1rem;
 }
 
@@ -73,10 +73,8 @@ a {
 	color: var(--text);
 	font-weight: bold;
 	line-height: 3;
-	width: 280px;
+	min-width: 360px;
 	margin-top: 1.5rem;
-	margin-left: 20%;
-	margin-right: 20%;
 }
 
 a:hover {
