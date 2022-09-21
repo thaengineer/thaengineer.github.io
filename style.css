@@ -36,10 +36,8 @@ body {
 	);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height: 100%;
 	padding-top:1.5rem;
 	line-height: 1rem;
-	max-width: 100%;
 }
 
 .profile-picture-container {
@@ -76,6 +74,8 @@ a {
 	font-weight: bold;
 	line-height: 3;
 	margin-top: 24px;
+	padding-left: 240px;
+	padding-right: 240px;
 }
 
 a:hover {
