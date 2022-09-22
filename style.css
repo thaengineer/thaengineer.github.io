@@ -12,41 +12,57 @@
 	--gradient-color-two: rgba(30,  39,  73,  0.9);
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color:            var(--text);
+    background-color: var(--bg);
+  }
+
+  a {
+    color: var(--text);
+  }
+}
+
 html {
-	font-family: var(--font);
-	font-weight: 500;
-    font-size: 16px;
-	scroll-behavior: smooth;
-	overflow-x: hidden; 
-    overflow-y: auto;
-	-webkit-font-smoothing: antialiased;
+	font-family:             var(--font);
+	font-size:               16px;
+	scroll-behavior:         smooth;
+	overflow-x:              hidden; 
+    overflow-y:              auto;
+	-webkit-font-smoothing:  antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	color: var(--text);
-	background: var(--bg);
+	max-width:        40rem;
+	margin:           40px auto;
+	padding:          0 24px;
+	line-height:      1.2;
+	color:            var(--text);
+	background-color: var(--bg);
 	background: linear-gradient(
 		0deg,
 		var(--gradient-color-one) 0%,
 		var(--gradient-color-two) 100%
 	);
-	background-repeat: no-repeat;
+	background-repeat:     no-repeat;
 	background-attachment: fixed;
-	padding-top: 1.5rem;
-	line-height: 1rem;
-	max-width: 40rem;
+}
+
+.container {
+	display:         flex;
+	align-content:   center;
+	justify-content: center;
+	padding:         1.5rem;
+	margin:          auto;
 }
 
 .profile-picture-container {
-	display: flex;
-	align-content: center;
+	display:         flex;
+	align-content:   center;
 	justify-content: center;
-	height: 100px;
-	margin-bottom: 1.5rem;
+	height:          96px;
+	margin-bottom:   1.5rem;
 }
 
 .profile-picture {
@@ -54,36 +70,32 @@ body {
 }
 
 .name {
-	display: flex;
-	align-content: center;
+	display:         flex;
+	align-content:   center;
 	justify-content: center;
-	color: var(--text);
-	font-family: inherit;
-	font-size: 1.5rem;
+	color:           var(--text);
+	font-family:     inherit;
+	font-size:       1.5rem;
 }
 
 a {
-	display: flex;
-	align-content: center;
+	display:         flex;
+	align-content:   center;
 	justify-content: center;
-	border: 2px var(--border) solid;
-	border-radius: 32px;
-	background-color: var(--transparent);
+	border:          2px var(--border) solid;
+	border-radius:   32px;
+
+	color:           var(--text);
+	font-weight:     bold;
+	line-height:     2.5rem;
 	text-decoration: none;
-	font-size: 1rem;
-	color: var(--text);
-	font-weight: bold;
-	line-height: 3;
-	min-width: 18rem;
-	margin-top: 1.5rem;
+	margin-top:      1.5rem;
 }
 
 a:hover {
-	color: var(--text-hover);
-	border-color: var(--text-hover);
-	transform: scale(1.02);
-	transition-duration: 30ms;
-	transition-delay: 0ms;
+	color:           var(--text-hover);
+	border-color:    var(--text-hover);
+	text-decoration: none;
 }
 
 ::selection {
