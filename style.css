@@ -1,5 +1,5 @@
 :root {
-    --font: Arial, Helvetica, sans-serif;
+  --font: Arial, Helvetica, sans-serif;
 
 	--bg:                 rgba(26,  35,  126, 1.0);
 	--bg-link:            rgba(245, 245, 245, 1.0);
@@ -7,7 +7,7 @@
 	--text-hover:         rgba(197, 202, 233, 1.0);
 	--text-selected:      rgba(33,  150, 243, 0.6);
 	--transparent:        rgba(0,   0,   0,   0.0);
-    --border:             rgba(245, 245, 245, 1.0);
+  --border:             rgba(245, 245, 245, 1.0);
 	--gradient-color-one: rgba(25,  118, 210, 1.0);
 	--gradient-color-two: rgba(30,  39,  73,  0.9);
 }
@@ -28,9 +28,9 @@ html {
 	font-size:               16px;
 	scroll-behavior:         smooth;
 	overflow-x:              hidden; 
-    overflow-y:              auto;
+  overflow-y:              auto;
 	-webkit-font-smoothing:  antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {

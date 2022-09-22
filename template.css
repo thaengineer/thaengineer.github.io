@@ -1,0 +1,48 @@
+:root {
+  --font:          Arial, Helvetica, sans-serif;
+  --bg:            rgba(26,  35,  126, 1.0);
+  --bg-dark:       rgba(26,  35,  126, 1.0);
+  --text:          rgba(245, 245, 245, 1.0);
+  --text-link:     rgba(33,  150, 243, 1.0);
+  --text-hover:    rgba(197, 202, 233, 1.0);
+  --text-selected: rgba(33,  150, 243, 0.6);
+  --transparent:   rgba(0,   0,   0,   0.0);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color:            var(--text);
+    background-color: var(--bg-dark);
+  }
+
+  a {
+    color: var(--text-link);
+  }
+
+  a:hover {
+    color: var(--text-hover);
+  }
+}
+
+html {
+  font-family: var(--font);
+  font-size:   16px;
+}
+
+body {
+  max-width:   40rem;
+  margin:      40px auto;
+  padding:     0 24px;
+  line-height: 1.2;
+  color:       var(--text);
+}
+
+h1,h2,h3 {
+  font-size: 1.5rem;
+}
+
+.container {
+  display:         flex;
+  align-content:   center;
+  justify-content: center;
+}
