@@ -1,25 +1,30 @@
 :root {
   --font: Arial, Helvetica, sans-serif;
 
-	--bg:                 rgba(26,  35,  126, 1.0);
-	--bg-link:            rgba(245, 245, 245, 1.0);
-	--text:               rgba(245, 245, 245, 1.0);
-	--text-hover:         rgba(197, 202, 233, 1.0);
-	--text-selected:      rgba(33,  150, 243, 0.6);
-	--transparent:        rgba(0,   0,   0,   0.0);
-  --border:             rgba(245, 245, 245, 1.0);
-	--gradient-color-one: rgba(25,  118, 210, 1.0);
-	--gradient-color-two: rgba(30,  39,  73,  0.9);
+	--black:  rgba(38,  50,  56,  1.0);
+	--white:  rgba(245, 245, 245, 1.0);
+  --red:    rgba(223, 28,  68,  1.0);
+  --green:  rgba(51,  139, 147, 1.0);
+  --blue:   rgba(33,  150, 243, 1.0);
+  --yellow: rgba(254, 207, 106, 1.0);
+  --purple: rgba(30,  39,  73,  0.9);
+
+  --transparent:  rgba(0,   0,   0,   0.0);
+  --light-green:  rgba(182, 244, 146, 1.0);
+  --light-blue:   rgba(25,  118, 210, 1.0);
+  --light-purple: rgba(197, 202, 233, 1.0);
+
+  --dark-blue: rgba(26,  35,  126, 1.0);
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    color:            var(--text);
-    background-color: var(--bg);
+    color:            var(--white);
+    background-color: var(--purple);
   }
 
   a {
-    color: var(--text);
+    color: var(--white);
   }
 }
 
@@ -29,7 +34,7 @@ html {
 	scroll-behavior:         smooth;
 	overflow-x:              hidden; 
   overflow-y:              auto;
-	-webkit-font-smoothing:  antialiased;
+  -webkit-font-smoothing:  antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -38,12 +43,11 @@ body {
 	margin:           40px auto;
 	padding:          0 24px;
 	line-height:      1.2;
-	color:            var(--text);
-	background-color: var(--bg);
+	color:            var(--white);
+	background-color: var(--green);
 	background: linear-gradient(
-		0deg,
-		var(--gradient-color-one) 0%,
-		var(--gradient-color-two) 100%
+		var(--purple) 0%,
+		var(--light-blue) 100%
 	);
 	background-repeat:     no-repeat;
 	background-attachment: fixed;
@@ -73,31 +77,31 @@ body {
 	display:         flex;
 	align-content:   center;
 	justify-content: center;
-	color:           var(--text);
+	color:           var(--white);
 	font-family:     inherit;
 	font-size:       1.5rem;
 }
 
 a {
-	display:         flex;
-	align-content:   center;
-	justify-content: center;
-	border:          2px var(--border) solid;
-	border-radius:   32px;
-
-	color:           var(--text);
-	font-weight:     bold;
-	line-height:     2.5rem;
-	text-decoration: none;
-	margin-top:      1.5rem;
+	display:          flex;
+	align-content:    center;
+	justify-content:  center;
+  border:           2px var(--white) solid;
+	border-radius:    32px;
+	background-color: var(--transparent);
+	margin-top:       1.5rem;
+	color:            var(--white);
+	font-weight:      bold;
+	line-height:      2.5rem;
+	text-decoration:  none;
 }
 
 a:hover {
-	color:           var(--text-hover);
-	border-color:    var(--text-hover);
+	color:           var(--light-purple);
+	border-color:    var(--light-purple);
 	text-decoration: none;
 }
 
 ::selection {
-	background-color: var(--text-selected);
+	background-color: var(--light-blue);
 }
