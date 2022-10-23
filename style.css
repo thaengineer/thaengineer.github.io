@@ -60,6 +60,10 @@ hr {
   background-color: var(--grey);
 }
 
+img {
+  border-radius: 1rem;
+}
+
 a {
   color:           var(--l-grey);
   font-size:       1.5rem;

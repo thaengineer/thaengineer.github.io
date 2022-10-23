@@ -35,13 +35,21 @@
         </ul>
       </p>
       <p>
-        If price does not close above previous <text class="text-bold text-yellow">HIGHS</text> or below previous <text class="text-bold text-yellow">LOWS</text>, the state of price delivery changes (price reverses).
+        If price does not close above previous <text class="text-bold text-blue">HIGHS</text> or below previous <text class="text-bold text-blue">LOWS</text>, the state of price delivery changes (price reverses).
       </p>
       <h2 class="name">Fair Value Gaps</h2>
-<pre>
-<text class="text-grey"># Fair Value Gap</text>
-FVG <text class="text-blue">=</text> (high[<text class="text-yellow">2</text>] <text class="text-blue"><</text> low) <text class="text-red">or</text> (low[<text class="text-yellow">2</text>] <text class="text-blue">></text> high)
-</pre>
+      <p>
+        A Fair Value Gap forms when candle <text class="text-bold text-yellow">1</text> and candle <text class="text-bold text-yellow">3</text> do not have any overlap in price.
+        <br>
+        The highlighted displacement range on candle <text class="text-bold text-yellow">2</text> is the gap or price inefficency.
+      </p>
+        <img
+          src="/gaps.png"
+          alt="Fair Value Gaps"
+          width="400"
+          height="356"
+        />
+      </p>
       <h2 class="name">Fibonacci Levels</h2>
       <ul>
         <li><text class="text-blue">-0.206</text>&nbsp;&nbsp;&nbsp;(profit scaling)</li>
