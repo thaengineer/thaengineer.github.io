@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css"/>
+  <link rel="icon" href="/favicon.png"/>
+  <title>Wiki</title>
+</head>
+<body>
+  <div class="containter">
+    <div class="wiki-title">
+      <h1>Notes</h1>
+    </div>
+    <div class="links-container">
+      <a href="/schedule.html" class="text-medium">Schedule</a>
+    </div>
+    <div class="body-container">
+      <h2 class="name">Liquidity</h2>
+      <p>
+        Price seeks liquidity in the form of <text class="text-bold text-blue">HIGHS</text>, <text class="text-bold text-blue">LOWS</text> and <text class="text-bold text-blue">GAPS</text>
+        <ul>
+          <li>Buy Stops rest above <text class="text-bold text-blue">HIGHS</text></li>
+          <li>Sell Stops rest below <text class="text-bold text-blue">LOWS</text></li>
+        </ul>
+      </p>      
+      <p>
+        Price runs <text class="text-bold text-blue">To and Through</text>
+        <ul>
+          <li>Monthly <text class="text-bold text-blue">HIGHS</text> and <text class="text-bold text-blue">LOWS</text></li>
+          <li>Weekly <text class="text-bold text-blue">HIGHS</text> and <text class="text-bold text-blue">LOWS</text></li>
+          <li>Daily <text class="text-bold text-blue">HIGHS</text> and <text class="text-bold text-blue">LOWS</text></li>
+          <li>Session <text class="text-bold text-blue">HIGHS</text> and <text class="text-bold text-blue">LOWS</text></li>
+        </ul>
+      </p>
+      <p>
+        If price does not close above previous <text class="text-bold text-yellow">HIGHS</text> or below previous <text class="text-bold text-yellow">LOWS</text>, the state of price delivery changes (price reverses).
+      </p>
+      <h2 class="name">Fair Value Gaps</h2>
+<pre>
+<text class="text-grey"># Fair Value Gap</text>
+FVG <text class="text-blue">=</text> (high[<text class="text-yellow">2</text>] <text class="text-blue"><</text> low) <text class="text-red">or</text> (low[<text class="text-yellow">2</text>] <text class="text-blue">></text> high)
+</pre>
+      <h2 class="name">Fibonacci Levels</h2>
+      <ul>
+        <li><text class="text-blue">-0.206</text>&nbsp;&nbsp;&nbsp;(profit scaling)</li>
+        <li><text class="text-blue">0</text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(first profit scaling)</li>
+        <li><text class="text-blue">0.5</text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(equilibrium)</li>
+        <li><text class="text-blue">0.618</text>&nbsp;&nbsp;&nbsp;&nbsp;(entry)</li>
+        <li><text class="text-blue">0.705</text>&nbsp;&nbsp;&nbsp;&nbsp;(optimal trade entry)</li>
+        <li><text class="text-blue">0.79</text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(entry)</li>
+        <li><text class="text-blue">1</text></li>
+      </ul>
+      <hr>
+      <h2 class="text-green">Bullish FVG Entry Checklist</h2>
+      <p>
+        <text class="text-bold text-yellow">STEP 01</text>
+        <br>
+        Stop Hunt of previous LOW or relative equal LOWS (1h and 15m)
+        <br>
+        <br>
+        <text class="text-bold text-yellow">STEP 02</text>
+        <br>
+        Wait for Market Structure Shift (5m, 2m, 1m)
+        <br>
+        <br>
+        <text class="text-bold text-yellow">STEP 03</text>
+        <br>
+        Wait for FVG to form when previous short term HIGH is taken out (5m, 2m, 1m)
+        <br>
+        <br>
+        <text class="text-bold text-yellow">STEP 04</text>
+        <br>
+        Enter on retrace to FVG at one of the OTE Fib levels below equilibrium
+        <br>
+        <br>
+        <text class="text-bold text-yellow">STEP 05</text>
+        <br>
+        Take profit at previous swing HIGHS or GAPS
+      </p>
+      <p>
+        <text class="text-bold">Example:</text>
+        <img
+          src="/bullish-fvg.png"
+          alt="Bullish FVG"
+          width="640"
+          height="400"
+        />
+      </p>
+      <hr>
+      <h2 class="text-red">Bearish FVG Entry Checklist</h2>
+      <p>
+        <text class="text-bold text-yellow">STEP 01</text>
+        <br>
+        Stop Hunt of previous HIGH or relative equal HIGHS (1h and 15m)
+        <br>
+        <br>
+        <text class="text-bold text-yellow">STEP 02</text>
+        <br>
+        Wait for Market Structure Shift (5m, 2m, 1m)
+        <br>
+        <br>
+        <text class="text-bold text-yellow">STEP 03</text>
+        <br>
+        Wait for FVG to form when previous short term LOW is taken out (5m, 2m, 1m)
+        <br>
+        <br>
+        <text class="text-bold text-yellow">STEP 04</text>
+        <br>
+        Enter on retrace to FVG at one of the OTE Fib levels above equilibrium
+        <br>
+        <br>
+        <text class="text-bold text-yellow">STEP 05</text>
+        <br>
+        Take profit at previous swing LOWS or GAPS
+      </p>
+      <p>
+        <text class="text-bold">Example:</text>
+        <img
+          src="/bearish-fvg.png"
+          alt="Bearish FVG"
+          width="640"
+          height="400"
+        />
+      </p>
+      <hr>
+      <h2 class="text-green">Bullish Breaker Block Entry Checklist</h2>
+      <p>
+        <text class="text-bold text-yellow">STEP 01</text>
+        <br>
+        Stop hunt takes out previous LOW
+        <br>
+        <br>
+        <text class="text-bold text-yellow">STEP 02</text>
+        <br>
+        Price breaks above previous swing HIGH
+        <br>
+        <br>
+        <text class="text-bold text-yellow">STEP 03</text>
+        <br>
+        Previous swing HIGH is the BREAKER (most recent bullish candle body)
+        <br>
+        <br>
+        <text class="text-bold text-yellow">STEP 04</text>
+        <br>
+        Enter on retrace to BREAKER level
+      </p>
+      <p>
+        <text class="text-bold">Example:</text>
+        <img
+          src="/bullish-breaker.png"
+          alt="Bullish Breaker"
+          width="640"
+          height="400"
+        />
+      </p>
+      <hr>
+      <h2 class="text-red">Bearish Breaker Block Entry Checklist</h2>
+      <p>
+        <text class="text-bold text-yellow">STEP 01</text>
+        <br>
+        Stop hunt takes out previous HIGH
+        <br>
+        <br>
+        <text class="text-bold text-yellow">STEP 02</text>
+        <br>
+        Price breaks below previous swing LOW
+        <br>
+        <br>
+        <text class="text-bold text-yellow">STEP 03</text>
+        <br>
+        Previous swing LOW is the BREAKER (most recent bearish candle body)
+        <br>
+        <br>
+        <text class="text-bold text-yellow">STEP 04</text>
+        <br>
+        Enter on retrace to BREAKER level
+      </p>
+      <p>
+        <text class="text-bold">Example:</text>
+        <img
+          src="/bearish-breaker.png"
+          alt="Bearish Breaker"
+          width="640"
+          height="400"
+        />
+      </p>
+      <hr>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,107 +1,119 @@
 :root {
   --font: Arial, Helvetica, sans-serif;
 
-	--black:  rgba(38,  50,  56,  1.0);
-	--white:  rgba(245, 245, 245, 1.0);
-  --red:    rgba(223, 28,  68,  1.0);
-  --green:  rgba(51,  139, 147, 1.0);
+  --black:  rgba(19,  23,  34,  1.0);
+  --grey:   rgba(42,  46,  57,  1.0);
+  --l-grey: rgba(149, 152, 161, 1.0);
+  --white:  rgba(209, 212, 220, 1.0);
+  --red:    rgba(247, 82,  95,  0.9);
+  --green:  rgba(102, 187, 106, 0.9);
   --blue:   rgba(33,  150, 243, 1.0);
-  --yellow: rgba(254, 207, 106, 1.0);
-  --purple: rgba(30,  39,  73,  0.9);
-
-  --transparent:  rgba(0,   0,   0,   0.0);
-  --light-green:  rgba(182, 244, 146, 1.0);
-  --light-blue:   rgba(25,  118, 210, 1.0);
-  --light-purple: rgba(197, 202, 233, 1.0);
-
-  --dark-blue: rgba(26,  35,  126, 1.0);
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    color:            var(--white);
-    background-color: var(--purple);
-  }
-
-  a {
-    color: var(--white);
-  }
+  --yellow: rgba(251, 192, 45,  0.9);
+  --transp: rgba(0,   0,   0,   0.0);
 }
 
 html {
-	font-family:             var(--font);
-	font-size:               16px;
-	scroll-behavior:         smooth;
-	overflow-x:              hidden; 
-  overflow-y:              auto;
-  -webkit-font-smoothing:  antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font);
+  font-size:   16px;
 }
 
 body {
-	max-width:        40rem;
-	margin:           40px auto;
-	padding:          0 24px;
-	line-height:      1.2;
-	color:            var(--white);
-	background-color: var(--green);
-	background: linear-gradient(
-		var(--purple) 0%,
-		var(--light-blue) 100%
-	);
-	background-repeat:     no-repeat;
-	background-attachment: fixed;
+  max-width:        40rem;
+  padding:          0 24px;
+  margin:           40px auto;
+  line-height:      1.5rem;
+  color:            var(--white);
+  background-color: var(--black);
 }
 
-.container {
-	display:         flex;
-	align-content:   center;
-	justify-content: center;
-	padding:         1.5rem;
-	margin:          auto;
+h1,h2,h3,h4,h5,h6 {
+  margin: 3rem 0 1rem;
 }
 
-.profile-picture-container {
-	display:         flex;
-	align-content:   center;
-	justify-content: center;
-	height:          96px;
-	margin-bottom:   1.5rem;
+p {
+  margin-bottom: 1.5rem;
 }
 
-.profile-picture {
-	border-radius: 50%;
+ul {
+  margin-bottom: 1.5rem;
+  font-family:   sans-serif;
 }
 
-.name {
-	display:         flex;
-	align-content:   center;
-	justify-content: center;
-	color:           var(--white);
-	font-family:     inherit;
-	font-size:       1.5rem;
+li {
+  margin-bottom: 0.5rem;
+}
+
+pre {
+  color:            var(--white);
+  background-color: var(--grey);
+  margin:           1rem 0 1rem;
+  padding:          1.5rem 2rem 1.5rem;
+  border-radius:    0.5rem;
+  white-space:      pre-wrap;
+  font-family:      monospace;
+}
+
+hr {
+  margin:           3rem 0 1rem;
+  height:           0px;
+  border-color:     var(--transp);
+  background-color: var(--grey);
 }
 
 a {
-	display:          flex;
-	align-content:    center;
-	justify-content:  center;
-  border:           2px var(--white) solid;
-	border-radius:    32px;
-	background-color: var(--transparent);
-	margin-top:       1.5rem;
-	color:            var(--white);
-	font-weight:      bold;
-	line-height:      2.5rem;
-	text-decoration:  none;
+  color:           var(--l-grey);
+  font-size:       1.5rem;
+  text-decoration: none;
 }
 
 a:hover {
-	color:           var(--light-purple);
-	border-color:    var(--light-purple);
-	text-decoration: none;
+  color:           var(--yellow);
+  text-decoration: none;
 }
 
-::selection {
-	background-color: var(--light-blue);
+.container {
+  display:         flex;
+  align-content:   center;
+  justify-content: center;
+}
+
+.links-container {
+  display:         flex;
+  align-content:   center;
+  justify-content: center;
+  margin:          1.5rem 0 0;
+}
+
+.body-container {
+  margin-top: -1rem;
+}
+
+.wiki-title {
+  display:         flex;
+  align-content:   center;
+  justify-content: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-grey {
+  color: var(--l-grey);
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.text-green {
+  color: var(--green);
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+.text-yellow {
+  color: var(--yellow);
 }
