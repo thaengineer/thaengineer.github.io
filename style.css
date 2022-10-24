@@ -12,6 +12,16 @@
   --transp: rgba(0,   0,   0,   0.0);
 }
 
+@media only screen and (min-width: 390px) {
+  body {
+    max-width: 390px;
+  }
+
+  img {
+    max-width: 390px;
+  }
+}
+
 html {
   font-family: var(--font);
   font-size:   16px;
