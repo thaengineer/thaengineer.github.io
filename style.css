@@ -12,11 +12,10 @@
   --transp: rgba(0,   0,   0,   0.0);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 390px) {
-  body {
-    max-width: 390px;
-  }
-
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
   img {
     max-width: 390px;
   }
