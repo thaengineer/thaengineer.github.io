@@ -8,6 +8,39 @@
   --transp: rgba(0,   0,   0,   0.0);
 }
 
+/* iphone 13 mini */
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
+  img {
+    max-width: 327px;
+    max-height: 204px;
+  }
+}
+
+/* iphone 13 and iphone 13 pro */
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+  img {
+    max-width: 342px;
+    max-height: 212px;
+  }
+}
+
+/* iphone 13 pro max */
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) {
+  img {
+    max-width: 380px;
+    max-height: 238px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     color:            var(--white);
