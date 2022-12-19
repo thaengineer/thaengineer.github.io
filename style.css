@@ -152,6 +152,7 @@ pre {
   border-radius:    0.5rem;
   white-space:      pre-wrap;
   font-family:      monospace;
+  font-size:        14px;
 }
 
 img {
