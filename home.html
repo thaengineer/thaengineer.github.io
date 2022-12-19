@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="/style.css"/>
   <link rel="icon" href="/favicon.png"/>
   <title>Wiki</title>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  </script>
 </head>
 <body>
   <div class="container">
@@ -24,7 +29,7 @@
       <h2>Liquidity</h2>
       <p>
         <i>
-          <time datetime="2022-12-19">December 19, 2022</time>
+          <time datetime="2022-12-19" class="text-dark-grey">December 19, 2022</time>
         </i>
       </p>
       <p>
@@ -44,106 +49,113 @@
         </ul>
       </p>
       <p>
-        If price does not close above previous <b>HIGH</b> or below previous <b>LOW</b>, the state of price delivery changes (price will seek liquidity in the opposite direction).
+        If price does not close above the previous <b>HIGH</b> or below the previous <b>LOW</b>, the state of price delivery changes (price will seek liquidity in the opposite direction).
       </p>
       <hr>
       <h2>Fair Value Gap</h2>
       <p>
         <i>
-          <time datetime="2022-12-19">December 19, 2022</time>
+          <time datetime="2022-12-19" class="text-dark-grey">December 19, 2022</time>
         </i>
       </p>
       <p>
-        A Fair Value Gap forms when candle <b class="text-yellow">1</b> and candle <b class="text-yellow">3</b> do not have any overlap in price.
-        <br>
-        The highlighted displacement range on candle <b class="text-yellow">2</b> is the gap or price inefficency.
+        A Fair Value Gap forms when the current candle does not share price with the one previous to the last.
       </p>
       <p>
-<pre class="text-green">
-FVG = high[2] < low[0] or low[2] > high[0]
-</pre>
+        <ul>
+          <li>High[2]&nbsp;<&nbsp;Low[0]</li>
+          <li>Low[2]&nbsp;&nbsp;>&nbsp;High[0]</li>
+        </ul>
       </p>
-      <img
-        src="/gap.png"
-        alt=" "
-        width="400"
-        height="356"
-      />
-    </p>
+      <hr>
       <h2>Fibonacci Levels</h2>
       <p>
         <i>
-          <time datetime="2022-12-19">December 19, 2022</time>
+          <time datetime="2022-12-19" class="text-dark-grey">December 19, 2022</time>
         </i>
       </p>
       <ul>
-        <li><b class="text-blue">-0.206</b>&nbsp;&nbsp;&nbsp;(profit scaling)</li>
         <li><b class="text-blue">0</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(first profit scaling)</li>
         <li><b class="text-blue">0.5</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(equilibrium)</li>
         <li><b class="text-blue">0.618</b>&nbsp;&nbsp;&nbsp;&nbsp;(entry)</li>
         <li><b class="text-blue">0.705</b>&nbsp;&nbsp;&nbsp;&nbsp;(optimal trade entry)</li>
         <li><b class="text-blue">0.79</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(entry)</li>
-        <li><b class="text-blue">1</b></li>
+        <li><b class="text-blue">1</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(stop loss)</li>
       </ul>
+      <hr>
+      <h2>Power of 3 (WORK IN PROGRESS)</h2>
+      <p>
+        <i>
+          <time datetime="2022-12-19" class="text-dark-grey">December 19, 2022</time>
+        </i>
+      </p>
+      <p>
+        Accumulation, Manipulation, Distribution
+      </p>
+      <p>
+        Midnight Open & 08:30 Open
+      </p>
+      <hr>
+      <h2>Divergence</h2>
+      <p>
+        <i>
+          <time datetime="2022-12-19" class="text-dark-grey">December 19, 2022</time>
+        </i>
+      </p>
+      <p>
+        <b class="text-green">Bullish:</b>
+        <ul>
+          <li>Index_1 forms a <b>LOW</b> followed by a <b>LOWER LOW</b></li>
+          <li>Index_2 forms a <b>LOW</b> followed by a <b>HIGHER LOW</b></li>
+          <li>Enter long position on Index_2</li>
+        </ul>
+        <b class="text-red">Bearish:</b>
+        <ul>
+          <li>Index_1 forms a <b>HIGH</b> followed by a <b>LOWER HIGH</b></li>
+          <li>Index_2 forms a <b>HIGH</b> followed by a <b>HIGHER HIGH</b></li>
+          <li>Enter short position on Index_1</li>
+        </ul>
       <hr>
       <h2>FVG Entry Checklist</h2>
       <p>
         <i>
-          <time datetime="2022-12-19">December 19, 2022</time>
+          <time datetime="2022-12-19" class="text-dark-grey">December 19, 2022</time>
         </i>
       </p>
       <p>
+        <b class="text-green">Bullish:</b>
         <ul>
-          <li>Stop Hunt of previous <b>HIGH</b> / <b>LOW</b> or relative equal <b>HIGHS</b> / <b>LOWS</b> (1h and 15m)</li>
+          <li>Stop Hunt of previous <b>LOW</b> or relative equal <b>LOWS</b> (1h and 15m)</li>
           <li>Wait for Market Structure Shift (5m, 2m, 1m)</li>
-          <li>Identify Premium/Discount <b>FVG</b> with <b>MSS</b> within displacement range (5m, 2m, 1m)
-          <li>Enter position on retrace to <b>FVG</b> around OTE Fib levels</li>
-          <li>Exit at 1h / 15m swing <b>HIGH</b> / <b>LOW</b> or <b>GAP</b></li>
+          <li>Identify Discount <b>FVG</b> with <b>MSS</b> within displacement range (5m, 2m, 1m)
+          <li>Enter long position on retrace to <b>FVG</b> around OTE Fib levels</li>
+          <li>Exit at previous 1h / 15m swing <b>HIGH</b> or <b>GAP</b></li>
+        </ul>
+        <b class="text-red">Bearish:</b>
+        <ul>
+          <li>Stop Hunt of previous <b>HIGH</b> or relative equal <b>HIGHS</b> (1h and 15m)</li>
+          <li>Wait for Market Structure Shift (5m, 2m, 1m)</li>
+          <li>Identify Premium <b>FVG</b> with <b>MSS</b> within displacement range (5m, 2m, 1m)
+          <li>Enter short position on retrace to <b>FVG</b> around OTE Fib levels</li>
+          <li>Exit at previous 1h / 15m swing <b>LOW</b> or <b>GAP</b></li>
         </ul>
       </p>
-      <p>
-        <b class="text-bold">Examples:</b>
-        <br>
-        <img
-          src="/fvg.png"
-          alt=" "
-          width="640"
-          height="400"
-        />
-      </p>
       <hr>
-      <h2>Bullish Breaker Entry Checklist</h2>
+      <h2>Breaker Entry Checklist</h2>
       <p>
         <i>
-          <time datetime="2022-12-19">December 19, 2022</time>
+          <time datetime="2022-12-19" class="text-dark-grey">December 19, 2022</time>
         </i>
       </p>
       <p>
+        <b class="text-green">Bullish:</b>
         <ul>
           <li>Stop hunt takes out previous <b>LOW</b></li>
           <li>Price breaks above previous swing <b>HIGH</b></li>
           <li>Previous swing <b>HIGH</b> is the <b>BREAKER</b> (most recent bullish candle body)</li>
           <li>Enter on retrace to <b>BREAKER</b> level</li>
         </ul>
-      </p>
-      <p>
-        <b class="text-bold">Example:</b>
-        <br>
-        <img
-          src="/bullish-breaker.png"
-          alt="Bullish Breaker"
-          width="640"
-          height="400"
-        />
-      </p>
-      <hr>
-      <h2>Bearish Breaker Entry Checklist</h2>
-      <p>
-        <i>
-          <time datetime="2022-12-19">December 19, 2022</time>
-        </i>
-      </p>
-      <p>
+        <b class="text-red">Bearish:</b>
         <ul>
           <li>Stop hunt takes out previous <b>HIGH</b></li>
           <li>Price breaks below previous swing <b>LOW</b></li>
@@ -151,44 +163,12 @@ FVG = high[2] < low[0] or low[2] > high[0]
           <li>Enter on retrace to <b>BREAKER</b> level</li>
         </ul>
       </p>
-      <p>
-        <b class="text-bold">Example:</b>
-        <br>
-        <img
-          src="/bearish-breaker.png"
-          alt="Bearish Breaker"
-          width="640"
-          height="400"
-        />
-      </p>
-      <hr>
-      <h2>Divergence</h2>
-      <p>
-        <i>
-          <time datetime="2022-12-19">December 19, 2022</time>
-        </i>
-      </p>
-      <p>
-<pre>
-Bullish:
-- Index_1 forms a <b>LOW</b> followed by a <b>LOWER LOW</b>
-- Index_2 forms a <b>LOW</b> followed by a <b>HIGHER LOW</b>
-
-Enter long position on Index_2
-
-
-Bearish:
-- Index_1 forms a <b>HIGH</b> followed by a <b>LOWER HIGH</b>
-- Index_2 forms a <b>HIGH</b> followed by a <b>HIGHER HIGH</b>
-
-Enter short position on Index_1
-</pre>
-      </p>
       <hr>
     </div>
     <div class="footer">
       <p>
-        <button>Back To Top</button>
+        <button onclick="scrollToTop()">
+          Back To Top
         </button>
       </p>
     </div>

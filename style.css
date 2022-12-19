@@ -57,6 +57,7 @@
 html {
   font-family: var(--font);
   font-size:   16px;
+  scroll-behavior: smooth;
 }
 
  /* max-width: 40; */
@@ -147,8 +148,8 @@ li {
 pre {
   color:            var(--code);
   background-color: var(--background);
-  margin:           1rem 0 1rem;
-  padding:          1.5rem 2rem 1.5rem;
+  margin:           1rem 0;
+  padding:          2rem;
   border-radius:    0.5rem;
   white-space:      pre-wrap;
   font-family:      monospace;
@@ -181,4 +182,8 @@ img {
 
 .text-yellow {
   color: var(--yellow);
+}
+
+.text-dark-grey {
+  color: var(--grey);
 }

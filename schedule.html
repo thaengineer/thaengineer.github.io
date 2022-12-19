@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="/style.css"/>
   <link rel="icon" href="/favicon.png"/>
   <title>Wiki</title>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  </script>
 </head>
 <body>
   <div class="containter">
@@ -59,22 +64,12 @@ profit_trigger <text class="text-grey">=</text> <text class="text-yellow">16</te
 plus           <text class="text-grey">=</text> <text class="text-yellow">1</text>
 </pre>
 <pre>
-<text class="text-grey">Custom</text>
-quantity       <text class="text-grey">=</text> <text class="text-yellow">1</text>
-time_in_force  <text class="text-grey">=</text> <text class="text-yellow">DAY</text>
-stop           <text class="text-grey">=</text> <text class="text-yellow">12</text>
-profit_target  <text class="text-grey">=</text> <text class="text-yellow">40</text>
-
-profit_trigger <text class="text-grey">=</text> <text class="text-yellow">16</text>
-plus           <text class="text-grey">=</text> <text class="text-yellow">1</text>
-</pre>
-<pre>
 <text class="text-grey">Custom with runner</text>
 quantity        <text class="text-grey">=</text> <text class="text-yellow">2</text>
 time_in_force   <text class="text-grey">=</text> <text class="text-yellow">DAY</text>
-stop            <text class="text-grey">=</text> <text class="text-yellow">12</text>
-profit_target_1 <text class="text-grey">=</text> <text class="text-yellow">40</text>
-profit_target_2 <text class="text-grey">=</text> <text class="text-yellow">80</text>
+stop            <text class="text-grey">=</text> <text class="text-yellow">16</text>
+profit_target_1 <text class="text-grey">=</text> <text class="text-yellow">20</text>
+profit_target_2 <text class="text-grey">=</text> <text class="text-yellow">60</text>
 
 profit_trigger  <text class="text-grey">=</text> <text class="text-yellow">16</text>
 plus            <text class="text-grey">=</text> <text class="text-yellow">1</text>
@@ -83,7 +78,8 @@ plus            <text class="text-grey">=</text> <text class="text-yellow">1</te
     </div>
     <div class="footer">
       <p>
-        <button>Back To Top</button>
+        <button onclick="scrollToTop()">
+          Back To Top
         </button>
       </p>
     </div>
