@@ -12,154 +12,101 @@
   <div class="container">
     <div class="header">
       <a class="title" href="/home.html">
-        <h1>Notes</h1>
+        <h1>ICT Notes</h1>
       </a>
       <div class="nav">
         <p>
           <a href="/schedule.html">Schedule</a>
-      </p>
+        </p>
       </div>
     </div>
     <div class="main">
       <h2>Liquidity</h2>
       <p>
         <i>
-          <time datetime="2022-12-19" pubdate>December 19, 2022</time>
+          <time datetime="2022-12-19">December 19, 2022</time>
         </i>
       </p>
       <p>
-        Price seeks liquidity in the form of <text class="text-bold text-blue">HIGHS</text>, <text class="text-bold text-blue">LOWS</text> and <text class="text-bold text-blue">GAPS</text>
+        Price seeks liquidity in the form of <b>HIGHS</b>, <b>LOWS</b> and <b>GAPS</b>
         <ul>
-          <li>Buy Stops rest above <text class="text-bold text-blue">HIGHS</text></li>
-          <li>Sell Stops rest below <text class="text-bold text-blue">LOWS</text></li>
+          <li>Buy Stops rest above <b>HIGHS</b></li>
+          <li>Sell Stops rest below <b>LOWS</b></li>
         </ul>
       </p>
       <p>
-        Price runs <text class="text-bold text-blue">To and Through</text>
+        Price runs <b>TO</b> and <b>THROUGH</b>
         <ul>
-          <li>Monthly <text class="text-bold text-blue">HIGHS</text> and <text class="text-bold text-blue">LOWS</text></li>
-          <li>Weekly <text class="text-bold text-blue">HIGHS</text> and <text class="text-bold text-blue">LOWS</text></li>
-          <li>Daily <text class="text-bold text-blue">HIGHS</text> and <text class="text-bold text-blue">LOWS</text></li>
-          <li>Session <text class="text-bold text-blue">HIGHS</text> and <text class="text-bold text-blue">LOWS</text></li>
+          <li>Monthly <b>HIGHS</b> and <b>LOWS</b></li>
+          <li>Weekly <b>HIGHS</b> and <b>LOWS</b></li>
+          <li>Daily <b>HIGHS</b> and <b>LOWS</b></li>
+          <li>Session <b>HIGHS</b> and <b>LOWS</b></li>
         </ul>
       </p>
       <p>
-        If price does not close above previous <text class="text-bold text-blue">HIGHS</text> or below previous <text class="text-bold text-blue">LOWS</text>, the state of price delivery changes (price reverses).
+        If price does not close above previous <b>HIGH</b> or below previous <b>LOW</b>, the state of price delivery changes (price will seek liquidity in the opposite direction).
       </p>
       <hr>
-      <h2>Fair Value Gaps</h2>
+      <h2>Fair Value Gap</h2>
       <p>
         <i>
-          <time datetime="2022-12-19" pubdate>December 19, 2022</time>
+          <time datetime="2022-12-19">December 19, 2022</time>
         </i>
       </p>
       <p>
-        A Fair Value Gap forms when candle <text class="text-bold text-yellow">1</text> and candle <text class="text-bold text-yellow">3</text> do not have any overlap in price.
+        A Fair Value Gap forms when candle <b class="text-yellow">1</b> and candle <b class="text-yellow">3</b> do not have any overlap in price.
         <br>
-        The highlighted displacement range on candle <text class="text-bold text-yellow">2</text> is the gap or price inefficency.
+        The highlighted displacement range on candle <b class="text-yellow">2</b> is the gap or price inefficency.
       </p>
-        <img
-          src="/gaps.png"
-          alt="Fair Value Gaps"
-          width="400"
-          height="356"
-        />
+      <p>
+<pre class="text-green">
+FVG = high[2] < low[0] or low[2] > high[0]
+</pre>
       </p>
+      <img
+        src="/gap.png"
+        alt=" "
+        width="400"
+        height="356"
+      />
+    </p>
       <h2>Fibonacci Levels</h2>
       <p>
         <i>
-          <time datetime="2022-12-19" pubdate>December 19, 2022</time>
+          <time datetime="2022-12-19">December 19, 2022</time>
         </i>
       </p>
       <ul>
-        <li><text class="text-blue">-0.206</text>&nbsp;&nbsp;&nbsp;(profit scaling)</li>
-        <li><text class="text-blue">0</text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(first profit scaling)</li>
-        <li><text class="text-blue">0.5</text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(equilibrium)</li>
-        <li><text class="text-blue">0.618</text>&nbsp;&nbsp;&nbsp;&nbsp;(entry)</li>
-        <li><text class="text-blue">0.705</text>&nbsp;&nbsp;&nbsp;&nbsp;(optimal trade entry)</li>
-        <li><text class="text-blue">0.79</text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(entry)</li>
-        <li><text class="text-blue">1</text></li>
+        <li><b class="text-blue">-0.206</b>&nbsp;&nbsp;&nbsp;(profit scaling)</li>
+        <li><b class="text-blue">0</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(first profit scaling)</li>
+        <li><b class="text-blue">0.5</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(equilibrium)</li>
+        <li><b class="text-blue">0.618</b>&nbsp;&nbsp;&nbsp;&nbsp;(entry)</li>
+        <li><b class="text-blue">0.705</b>&nbsp;&nbsp;&nbsp;&nbsp;(optimal trade entry)</li>
+        <li><b class="text-blue">0.79</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(entry)</li>
+        <li><b class="text-blue">1</b></li>
       </ul>
       <hr>
-      <h2>Bullish FVG Entry Checklist</h2>
+      <h2>FVG Entry Checklist</h2>
       <p>
         <i>
-          <time datetime="2022-12-19" pubdate>December 19, 2022</time>
+          <time datetime="2022-12-19">December 19, 2022</time>
         </i>
       </p>
       <p>
-        <text class="text-bold text-yellow">STEP 01</text>
-        <br>
-        Stop Hunt of previous <text class="text-bold text-blue">LOW</text> or relative equal <text class="text-bold text-blue">LOWS</text> (1h and 15m)
-        <br>
-        <br>
-        <text class="text-bold text-yellow">STEP 02</text>
-        <br>
-        Wait for Market Structure Shift (5m, 2m, 1m)
-        <br>
-        <br>
-        <text class="text-bold text-yellow">STEP 03</text>
-        <br>
-        Wait for <text class="text-bold text-blue">FVG</text> to form when previous short term <text class="text-bold text-blue">HIGH</text> is taken out (5m, 2m, 1m)
-        <br>
-        <br>
-        <text class="text-bold text-yellow">STEP 04</text>
-        <br>
-        Enter on retrace to <text class="text-bold text-blue">FVG</text> at one of the OTE Fib levels below equilibrium
-        <br>
-        <br>
-        <text class="text-bold text-yellow">STEP 05</text>
-        <br>
-        Take profit at previous swing <text class="text-bold text-blue">HIGHS</text> or <text class="text-bold text-blue">GAPS</text>
+        <ul>
+          <li>Stop Hunt of previous <b>HIGH</b> / <b>LOW</b> or relative equal <b>HIGHS</b> / <b>LOWS</b> (1h and 15m)</li>
+          <li>Wait for Market Structure Shift (5m, 2m, 1m)</li>
+          <li>Identify Premium/Discount <b>FVG</b> with <b>MSS</b> within displacement range (5m, 2m, 1m)
+          <li>Enter position on retrace to <b>FVG</b> around OTE Fib levels</li>
+          <li>Exit at 1h / 15m swing <b>HIGH</b> / <b>LOW</b> or <b>GAP</b></li>
+        </ul>
       </p>
       <p>
-        <text class="text-bold">Example:</text>
+        <b class="text-bold">Examples:</b>
         <br>
         <img
-          src="/bullish-fvg.png"
-          alt="Bullish FVG"
-          width="640"
-          height="400"
-        />
-      </p>
-      <hr>
-      <h2>Bearish FVG Entry Checklist</h2>
-      <p>
-        <i>
-          <time datetime="2022-12-19" pubdate>December 19, 2022</time>
-        </i>
-      </p>
-      <p>
-        <text class="text-bold text-yellow">STEP 01</text>
-        <br>
-        Stop Hunt of previous <text class="text-bold text-blue">HIGH</text> or relative equal <text class="text-bold text-blue">HIGHS</text> (1h and 15m)
-        <br>
-        <br>
-        <text class="text-bold text-yellow">STEP 02</text>
-        <br>
-        Wait for Market Structure Shift (5m, 2m, 1m)
-        <br>
-        <br>
-        <text class="text-bold text-yellow">STEP 03</text>
-        <br>
-        Wait for <text class="text-bold text-blue">FVG</text> to form when previous short term <text class="text-bold text-blue">LOW</text> is taken out (5m, 2m, 1m)
-        <br>
-        <br>
-        <text class="text-bold text-yellow">STEP 04</text>
-        <br>
-        Enter on retrace to <text class="text-bold text-blue">FVG</text> at one of the OTE Fib levels above equilibrium
-        <br>
-        <br>
-        <text class="text-bold text-yellow">STEP 05</text>
-        <br>
-        Take profit at previous swing <text class="text-bold text-blue">LOWS</text> or <text class="text-bold text-blue">GAPS</text>
-      </p>
-      <p>
-        <text class="text-bold">Example:</text>
-        <br>
-        <img
-          src="/bearish-fvg.png"
-          alt="Bearish FVG"
+          src="/fvg.png"
+          alt=" "
           width="640"
           height="400"
         />
@@ -168,31 +115,19 @@
       <h2>Bullish Breaker Entry Checklist</h2>
       <p>
         <i>
-          <time datetime="2022-12-19" pubdate>December 19, 2022</time>
+          <time datetime="2022-12-19">December 19, 2022</time>
         </i>
       </p>
       <p>
-        <text class="text-bold text-yellow">STEP 01</text>
-        <br>
-        Stop hunt takes out previous <text class="text-bold text-blue">LOW</text>
-        <br>
-        <br>
-        <text class="text-bold text-yellow">STEP 02</text>
-        <br>
-        Price breaks above previous swing <text class="text-bold text-blue">HIGH</text>
-        <br>
-        <br>
-        <text class="text-bold text-yellow">STEP 03</text>
-        <br>
-        Previous swing <text class="text-bold text-blue">HIGH</text> is the <text class="text-bold text-blue">BREAKER</text> (most recent bullish candle body)
-        <br>
-        <br>
-        <text class="text-bold text-yellow">STEP 04</text>
-        <br>
-        Enter on retrace to <text class="text-bold text-blue">BREAKER</text> level
+        <ul>
+          <li>Stop hunt takes out previous <b>LOW</b></li>
+          <li>Price breaks above previous swing <b>HIGH</b></li>
+          <li>Previous swing <b>HIGH</b> is the <b>BREAKER</b> (most recent bullish candle body)</li>
+          <li>Enter on retrace to <b>BREAKER</b> level</li>
+        </ul>
       </p>
       <p>
-        <text class="text-bold">Example:</text>
+        <b class="text-bold">Example:</b>
         <br>
         <img
           src="/bullish-breaker.png"
@@ -205,31 +140,19 @@
       <h2>Bearish Breaker Entry Checklist</h2>
       <p>
         <i>
-          <time datetime="2022-12-19" pubdate>December 19, 2022</time>
+          <time datetime="2022-12-19">December 19, 2022</time>
         </i>
       </p>
       <p>
-        <text class="text-bold text-yellow">STEP 01</text>
-        <br>
-        Stop hunt takes out previous <text class="text-bold text-blue">HIGH</text>
-        <br>
-        <br>
-        <text class="text-bold text-yellow">STEP 02</text>
-        <br>
-        Price breaks below previous swing <text class="text-bold text-blue">LOW</text>
-        <br>
-        <br>
-        <text class="text-bold text-yellow">STEP 03</text>
-        <br>
-        Previous swing <text class="text-bold text-blue">LOW</text> is the <text class="text-bold text-blue">BREAKER</text> (most recent bearish candle body)
-        <br>
-        <br>
-        <text class="text-bold text-yellow">STEP 04</text>
-        <br>
-        Enter on retrace to <text class="text-bold text-blue">BREAKER</text> level
+        <ul>
+          <li>Stop hunt takes out previous <b>HIGH</b></li>
+          <li>Price breaks below previous swing <b>LOW</b></li>
+          <li>Previous swing <b>LOW</b> is the <b>BREAKER</b> (most recent bearish candle body)</li>
+          <li>Enter on retrace to <b>BREAKER</b> level</li>
+        </ul>
       </p>
       <p>
-        <text class="text-bold">Example:</text>
+        <b class="text-bold">Example:</b>
         <br>
         <img
           src="/bearish-breaker.png"
@@ -237,6 +160,29 @@
           width="640"
           height="400"
         />
+      </p>
+      <hr>
+      <h2>Divergence</h2>
+      <p>
+        <i>
+          <time datetime="2022-12-19">December 19, 2022</time>
+        </i>
+      </p>
+      <p>
+<pre>
+Bullish:
+- Index_1 forms a <b>LOW</b> followed by a <b>LOWER LOW</b>
+- Index_2 forms a <b>LOW</b> followed by a <b>HIGHER HIGH</b>
+
+Enter long position on Index_2
+
+
+Bearish:
+- Index_1 forms a <b>HIGH</b> followed by a <b>LOWER HIGH</b>
+- Index_2 forms a <b>HIGH</b> followed by a <b>HIGHER HIGH</b>
+
+Enter short position on Index_1
+</pre>
       </p>
       <hr>
     </div>
