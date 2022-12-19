@@ -63,6 +63,11 @@ body {
   background-color: var(--black);
 }
 
+.container {
+  display:         flex;
+  flex-direction: column;
+}
+
 header {
   color: var(--white);
 }
@@ -139,12 +144,6 @@ code, pre {
 
 img {
   border-radius: 1rem;
-}
-
-.container {
-  display:         flex;
-  align-content:   center;
-  justify-content: center;
 }
 
 .text-bold {
