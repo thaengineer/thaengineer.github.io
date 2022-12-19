@@ -10,6 +10,16 @@
   --blue:   rgba(33,  150, 243, 1.0);
   --yellow: rgba(251, 192, 45,  0.9);
   --transp: rgba(0,   0,   0,   0.0);
+
+  --background: #19150f;
+  --heading: #eee;
+  --text: #ddd;
+  --link: #ff5e6c;
+  --visited: #fca9b0;
+  --code-background: #000;
+  --code: #ddd;
+  --blockquote: #ccc;
+
 }
 
 /* iphone 13 mini */
@@ -59,8 +69,8 @@ body {
   text-align:       left;
   word-wrap:        break-word;
   overflow-wrap:    break-word;
-  color:            var(--white);
-  background-color: var(--black);
+  color:            var(--text);
+  background-color: var(--background);
 }
 
 .container {
@@ -73,7 +83,7 @@ justify-content: center;
 */
 
 header {
-  color: var(--white);
+  color: var(--text);
 }
 
 .title {
@@ -82,7 +92,6 @@ header {
 
 .title h1 {
   font-size: 1.5rem;
-  color: var(--white);
 }
 
 .nav a {
@@ -91,24 +100,26 @@ header {
 
 a {
   font-size: 1.1rem;
-  color:           var(--l-grey);
+  color:           var(--link);
   text-decoration: underline;
 }
 
+/*
 a:hover {
-  color: var(--yellow);
+  text-decoration: none;
 }
+*/
 
 a:visited {
-  color: var(--visited-color);
+  color: var(--visited);
 }
 
 .main {
-  color: var(--white);
+  color: var(--text);
 }
 
 .footer {
-  color: var(--white);
+  color: var(--text);
 }
 
 hr {
@@ -120,7 +131,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 3rem 0 1rem;
-  color: var(--white);
+  color: var(--heading);
 }
 
 p {
@@ -137,8 +148,8 @@ li {
 }
 
 code, pre {
-  color:            var(--white);
-  background-color: var(--grey);
+  color:            var(--code);
+  background-color: var(--code-background);
   margin:           1rem 0 1rem;
   padding:          1.5rem 2rem 1.5rem;
   border-radius:    0.5rem;
