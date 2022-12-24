@@ -111,6 +111,17 @@ a:visited {
 
 .main {
   color: var(--text);
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+      transform: translate3d(0, 40rem, 0)
+  }
+  to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1
+  }
 }
 
 .footer {
@@ -129,7 +140,20 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 2rem 0 1rem;
+  padding: 0.5rem;
   color: var(--heading);
+}
+
+.type {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typewrite 4s steps(44) 0.5s forwards;
+}
+
+@keyframes typewrite {
+  from { width: 0; }
+  to { width: 100%; }
 }
 
 p {
